@@ -4,7 +4,6 @@ const sliderData = [
     {id: 3, img: '/images/bg_3.jpg'},
 ];
 
-// Рендер оригинальных слайдов
 const slider = document.querySelector('.slider');
 slider.innerHTML = '';
 
@@ -66,20 +65,39 @@ coffeeOffers.forEach((item) => {
     coffeeOffer.appendChild(cardItem)
 })
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav");
     const navClose = document.querySelector(".nav-close");
 
+    const updateBurgerVisibility = () => {
+        if (window.innerWidth > 768) {
+
+            burger.style.display = "none";
+            nav.classList.remove("open");
+            burger.setAttribute("aria-expanded", "false");
+        } else {
+
+            burger.style.display = nav.classList.contains("open") ? "none" : "block";
+        }
+    };
+
     burger.addEventListener("click", () => {
         nav.classList.add("open");
-        burger.style.display = "none";
         burger.setAttribute("aria-expanded", "true");
+        updateBurgerVisibility();
     });
 
     navClose.addEventListener("click", () => {
         nav.classList.remove("open");
-        burger.style.display = "block";
         burger.setAttribute("aria-expanded", "false");
+        updateBurgerVisibility();
     });
+
+    window.addEventListener("resize", updateBurgerVisibility);
+
+    updateBurgerVisibility();
 });
+
