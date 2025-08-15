@@ -1,0 +1,11 @@
+:root {
+    --container: 1200px;
+    --bg: #E4DCD1;
+    --text: #262626;
+    --muted: #7a6b61;
+    --accent: #6f4e37;
+    --accent-2: #dcbc9e;
+    --radius: 12px;
+    --gap: 18px;
+    --bg-footer:#3C3C3E;
+}

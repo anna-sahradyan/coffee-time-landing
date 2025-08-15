@@ -1,0 +1,102 @@
+@media (max-width: 877px) {
+    .banner_text_block__text {
+        text-align: left;
+        white-space: normal;
+    }
+
+    .banner_text_block__text br {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner_btn {
+        justify-content: flex-end;
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .btn-icon {
+        display: block;
+    }
+
+    .btn-text {
+        display: none;
+    }
+}
+
+/*promo*/
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .coffee-offers {
+       width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 200px;
+        height: 100vh;
+        background-color: var(--accent-2);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 80px 20px 20px;
+        z-index: 90;
+        overflow-y: auto;
+    }
+
+    .nav.open {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav__list li a {
+        display: block;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    .nav__list li a::after {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 80;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+

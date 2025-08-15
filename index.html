@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>CoffeeTime — Лендинг</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header__inner">
+        <div class="logo"> <span class="logo_text">CoffeeTime</span></div>
+        <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="main-nav">
+            ☰
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Главная навигация">
+            <ul class="nav__list">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="hero" class="hero" role="region" aria-label="Баннер">
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                </div>
+                <button class="btn_next slider-btn"> &gt;</button>
+                <button class="btn_prev slider-btn">&lt;</button>
+                <div class="banner_text_block">
+                    <p class="banner_text_block__text">
+                        welcome !<br>
+                        we saved to the richest coffee<br>
+                        in the city!!
+                    </p>
+                    <a class="btn banner_btn" href="#menu">
+                        <span class="btn-text">Посмотреть меню</span>
+                        <img class="btn-icon" src="/icons/arrow.svg" alt="→">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="promo" class="promo">
+        <div class="container">
+            <div class="coffee-offers">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section about">
+        <div class="container about__inner">
+            <img class="about__img" src="images/bar.jpg" alt="Интерьер кофейни"/>
+            <div class="about__text">
+                <h2 class="about__title">О нас</h2>
+                <p>
+                    CoffeeTime — уютная кофейня для ценителей настоящего кофе. Мы используем
+                    свежую обжарку и натуральные ингредиенты. На завтрак — ароматная выпечка,
+                    а вечером — спокойная музыка и теплая атмосфера.
+                </p>
+                <p>
+                    <strong>График работы:</strong> Пн–Вс 08:00–22:00. Заказы на вынос и доставка по городу.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2>Наши напитки</h2>
+            <div class="menu__grid">
+                <article class="card_menu">
+                    <img src="images/coffee_1.jpg" alt="Латте"/>
+                    <div>
+                        <h3>Латте</h3>
+                        <p class="muted">Мягкий молочный кофе с пенкой</p>
+                    </div>
+                    <div class="price">250 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_2.jpg" alt="Капучино"/>
+                    <div>
+                        <h3>Капучино</h3>
+                        <p class="muted">Пенка и ароматная смесь</p>
+                    </div>
+                    <div class="price">240 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_3.jpg" alt="Эспрессо"/>
+                    <div>
+                        <h3>Эспрессо</h3>
+                        <p class="muted">Крепкий и насыщенный</p>
+                    </div>
+                    <div class="price">180 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_4.jpg" alt="Американо"/>
+                    <div>
+                        <h3>Американо</h3>
+                        <p class="muted">Черный кофе без молока</p>
+                    </div>
+                    <div class="price">200 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_5.jpg" alt="Мокка"/>
+                    <div>
+                        <h3>Мокка</h3>
+                        <p class="muted">Какао с эспрессо и молоком</p>
+                    </div>
+                    <div class="price">260 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_6.jpg" alt="Раф"/>
+                    <div>
+                        <h3>Раф</h3>
+                        <p class="muted">Сливочный кофе с ванилью</p>
+                    </div>
+                    <div class="price">270 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_8.jpg" alt="Карамельный латте"/>
+                    <div>
+                        <h3>Карамельный латте</h3>
+                        <p class="muted">Сладкий кофе с карамелью</p>
+                    </div>
+                    <div class="price">280 ₽</div>
+                </article>
+
+                <article class="card_menu">
+                    <img src="images/coffee_9.jpg" alt="Флэт уайт"/>
+                    <div>
+                        <h3>Флэт уайт</h3>
+                        <p class="muted">Сильный кофе с молочной пенкой</p>
+                    </div>
+                    <div class="price">250 ₽</div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <div class="footer_inner">
+
+            <div class="footer-address-wrapper">
+                <div class="footer-address">
+                    <strong class="address-strong">CoffeeTime</strong><br>
+                    <span class="footer-address-text">г. Ереван, ул. Примерная, 1<br>
+          Телефон: <a href="tel:+37400000000">+374 00 000000</a></span>
+                </div>
+            </div>
+
+            <div class="bottom_footer">
+                <div class="footer-column">
+                    <h4>Contacts</h4>
+                    <ul>
+                        <li>Email: info@coffeetime.com</li>
+                        <li>Тел: +374 00 000000</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>Catalog</li>
+                        <li>Special Offers</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Service</h4>
+                    <ul>
+                        <li>Delivery</li>
+                        <li>Returns</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contact Us</li>
+                        <li>Track Order</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li>Terms</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column socials-column">
+                    <h4>Social Media</h4>
+                    <div class="drift-socials">
+                        <a href="#" aria-label="Instagram"><img src="/icons/inst.svg" alt="inst"></a>
+                        <a href="#" aria-label="Facebook"><img src="/icons/face.svg" alt="face"></a>
+                        <a href="#" aria-label="TikTok"><img src="/icons/vk.svg" alt="tic"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+<rect fill="#6f4e37" width="24" height="24" rx="4" />
+<path
+fill="#FAFAFA"
+d="M12.98 18v-5.47h1.93l.28-2.14h-2.21V9.03c0-.62.18-1.04 1.1-1.04h1.2V6.1c-.21-.03-.92-.09-1.74-.09-1.7 0-2.88 1-2.88 2.82v1.57H8.73v2.14h1.93V18h2.32Z"
+/>
+        </svg>
